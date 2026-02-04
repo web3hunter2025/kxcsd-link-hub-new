@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九月老师-BTC分析</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: linear-gradient(135deg, #f5f1e8 0%, #ede8dc 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 24px;
+            padding: 48px 32px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff9800 0%, #ff6b00 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 40px;
+            box-shadow: 0 4px 16px rgba(255, 152, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2c2416;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #6b5d4f;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .cta {
+            font-size: 14px;
+            color: #8b7355;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            background: white;
+            border: 2px solid #e8dcc8;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #2c2416;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-button:hover {
+            border-color: #d4c4a8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .link-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 152, 0, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .link-button:hover::before {
+            left: 100%;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            background: white;
+            border: 2px solid #e8dcc8;
+            border-radius: 12px;
+            color: #2c2416;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: default;
+        }
+
+        .link-icon {
+            font-size: 20px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .link-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .arrow {
+            font-size: 18px;
+            color: #a89578;
+            transition: transform 0.3s ease;
+        }
+
+        .link-button:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 13px;
+            color: #9b8b73;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 36px 24px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .link-button, .info-item {
+                padding: 14px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">₿</div>
+        <h1>九月老师-BTC分析</h1>
+        <p class="subtitle">专业BTC行情分析 | 实战经验分享 | 永久返佣优惠</p>
+        <p class="cta">点击以下链接获取资料或联系我们 👇</p>
+        
+        <div class="links">
+            <a href="https://drive.google.com/drive/folders/168T7jzDEIrCfF4Y7qQ4a5CR_GO7OeTZ7?usp=drive_link" class="link-button" target="_blank" rel="noopener noreferrer">
+                <span class="link-icon">📁</span>
+                <span class="link-text">九月老师资料点击获取</span>
+                <span class="arrow">→</span>
+            </a>
+            
+            <a href="https://www.xt.com/zh-CN/accounts/register?ref=BTC888888" class="link-button" target="_blank" rel="noopener noreferrer">
+                <span class="link-icon">🔗</span>
+                <span class="link-text">XT交易所注册（永久40%返佣）</span>
+                <span class="arrow">→</span>
+            </a>
+            
+            <a href="https://t.me/QKLZG" class="link-button" target="_blank" rel="noopener noreferrer">
+                <span class="link-icon">✈️</span>
+                <span class="link-text">TG交流群</span>
+                <span class="arrow">→</span>
+            </a>
+            
+            <a href="https://t.me/Chinese100xx" class="link-button" target="_blank" rel="noopener noreferrer">
+                <span class="link-icon">💬</span>
+                <span class="link-text">TG助理 @Chinese100xx</span>
+                <span class="arrow">→</span>
+            </a>
+            
+            <div class="info-item">
+                <span class="link-icon">🐧</span>
+                <span class="link-text">QQ小助理：526954372</span>
+            </div>
+        </div>
+        
+        <p class="footer">如有问题请随时联系我们的助理</p>
+    </div>
+</body>
+</html>
